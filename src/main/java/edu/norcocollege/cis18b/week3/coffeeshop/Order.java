@@ -1,21 +1,22 @@
 package edu.norcocollege.cis18b.week3.coffeeshop;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Order
 {
-    String orderId;
-    List<MenuItem> items;
+    private String orderId;
+    private List<MenuItem> items;
 
-    public Order (String orderId, List<MenuItem> items)
+    public Order (String orderId)
     {
         if(orderId==null || orderId.isBlank())
         {
             throw new IllegalArgumentException("Order ID cannot be null or empty");
         }
         this.orderId = orderId;
-        this.items = items;
+        this.items = new ArrayList<>();
     }
 
     public void addItem(MenuItem item)
