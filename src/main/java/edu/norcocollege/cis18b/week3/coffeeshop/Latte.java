@@ -1,4 +1,9 @@
+
+
+package edu.norcocollege.cis18b.week3.coffeeshop;
+
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Latte extends Beverage {
 
@@ -9,7 +14,7 @@ public class Latte extends Beverage {
 
     @Override
     public BigDecimal getPrice() {
-        return BasePrice.multiply(sizeMultiplier());
+        return BasePrice.multiply(sizeMultiplier()).setScale(2, RoundingMode.HALF_UP);
     }
 
     public String toString()

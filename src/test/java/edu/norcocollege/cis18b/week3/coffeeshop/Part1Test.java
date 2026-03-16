@@ -1,13 +1,14 @@
-package edu.norco.cis18b.coffeeshop;
+package edu.norcocollege.cis18b.week3.coffeeshop;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import edu.norco.cis18b.coffeeshop.grading.Points;
-import edu.norco.cis18b.coffeeshop.grading.ScoreExtension;
+import edu.norcocollege.cis18b.week3.coffeeshop.grading.Points;
+import edu.norcocollege.cis18b.week3.coffeeshop.grading.ScoreExtension;
 
 @Points(2)
 @ExtendWith(ScoreExtension.class)

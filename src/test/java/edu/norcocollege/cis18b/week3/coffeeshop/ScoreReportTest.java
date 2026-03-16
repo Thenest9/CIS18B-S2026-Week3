@@ -1,6 +1,6 @@
-package edu.norco.cis18b.coffeeshop;
+package edu.norcocollege.cis18b.week3.coffeeshop;
 
-import edu.norco.cis18b.coffeeshop.grading.ScoreExtension;
+import edu.norcocollege.cis18b.week3.coffeeshop.grading.ScoreExtension;
 import org.junit.jupiter.api.Test;
 
 /**

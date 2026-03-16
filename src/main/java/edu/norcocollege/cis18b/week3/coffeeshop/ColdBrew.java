@@ -1,6 +1,7 @@
 package edu.norcocollege.cis18b.week3.coffeeshop;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class ColdBrew extends Beverage
 {
@@ -12,6 +13,6 @@ public class ColdBrew extends Beverage
 
      @Override
     public BigDecimal getPrice() {
-        return basePrice.multiply(sizeMultiplier());
+        return basePrice.multiply(sizeMultiplier()).setScale(2, RoundingMode.HALF_UP);
     }
 }
